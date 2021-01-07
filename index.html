@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Hello, World!</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div id="firstDiv" class="window"><p>"Photography" project was created due to the Logos IT academy course. Here I used HTML, CSS, JS</p>
+        <button id="closeBtn1" class="close-window">Close</button>
+    </div>
+    <div id="secondDiv" class="window"><p>"Flashcards" project was created due to the JetBrains Academy. Here I used only HTML and CSS.</p>
+            <button id="closeBtn2" class="close-window">Close</button>
+    </div>
+
+    <header>
+        <!-- Hamburger menu -->
+        <div class="hamburger">
+            <input id="menu__toggle" type="checkbox" />
+            <label class="menu__btn" for="menu__toggle">
+              <span></span>
+            </label>
+        
+            <ul class="menu__box">
+                    <li><a class="menu__item" href="#about">About me</a></li>
+                    <li><a class="menu__item" href="#portfolio">Portfolio</a></li>
+                    <li><a class="menu__item" href="#contacts">Contacts</a></li>
+            </ul>
+          </div>
+
+
+        <nav>
+            <ul class="navbar d-flex">
+                <li>
+                    <a href="#about">About me</a>
+                </li>
+                <li>
+                    <a href="#portfolio">Portfolio</a>
+                </li>
+                <li>
+                    <a href="#contacts">Contacts</a>
+                </li>
+            </ul>
+        </nav>
+        <h1>Natalia Usach, <br> Front-end developer</h1>
+    </header>
+    <section id="about">
+        <h2>About me</h2>
+        <div class="about d-flex">
+        <img src="author.jpg" alt="Image of Natalia Usach">
+        <p>Hello, everyone! I'm Natalia Usach. I'm on a maternity leave
+        and only after having two kids I decided to study Front-end development. I'm trying really hard
+    to learn the basics, practice a lot and do tons of exercises. Honestly, I can spend nights practicing.</p>
+        </div>
+    </section>
+
+    <section id="portfolio">
+        <h2>Portfolio</h2>
+        <div class="portfolio d-flex">
+        
+            
+        <figure>
+            <figcaption>Photography</figcaption>
+            <button id="firstButton" class="open-window">More about this project...</button>
+            <img src="portfolio1.png" alt="Image of a portfolio example 1">
+            
+        </figure>
+        
+        
+        <figure>
+            <figcaption>Flashcards</figcaption>
+            <button id="secondButton" class="open-window">More about this project...</button>
+            <img src="portfolio2.png" alt="Image of a portfolio example 2">
+            
+        </figure>
+        </div>
+    </section>
+
+    <section id="contacts">
+    <p>Please feel free to contact me via <a href="mailto:klimchuknatalia@gmail.com">email</a>.</p>
+    </section>
+    <footer>
+    <p>All rights reserved. Natalia Usach, 2021</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
